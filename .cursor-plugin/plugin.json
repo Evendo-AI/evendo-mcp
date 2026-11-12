@@ -1,0 +1,13 @@
+{
+  "name": "evendo-places",
+  "displayName": "Evendo Places",
+  "description": "Resolve places and find, filter and rank venues worldwide with the Evendo Place Score.",
+  "version": "0.2.0",
+  "author": { "name": "Evendo", "email": "support@evendo.com", "url": "https://evendo.com/developers" },
+  "homepage": "https://evendo.com/developers",
+  "repository": "https://github.com/evendo-ai/evendo-mcp",
+  "license": "MIT",
+  "keywords": ["mcp", "places", "travel", "venues", "restaurants", "attractions", "local-search"],
+  "logo": "assets/logo-400.png",
+  "mcpServers": "mcp.json"
+}
