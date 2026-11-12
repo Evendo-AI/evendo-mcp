@@ -1,0 +1,9 @@
+# Registry signing key: never commit
+key.pem
+*.pem
+.mcpregistry_*
+
+# Local tooling
+.DS_Store
+node_modules/
+*.log
