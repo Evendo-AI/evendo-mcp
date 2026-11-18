@@ -1,11 +1,13 @@
 # Installing the Evendo Places MCP server (instructions for AI agents)
 
+Evendo Places, part of the Evendo World Model, is served by the MCP server `evendo-places` (registry name `com.evendo/places`) at `https://mcp.evendo.com/mcp`.
+
 Evendo Places is a **remote** MCP server. There is nothing to download, build or run locally, and **no API key** is required.
 
 - Endpoint: `https://mcp.evendo.com/mcp`
 - Transport: Streamable HTTP
 - Auth: none currently required
-- Rate limit: 200 requests per minute
+- Rate limit: 25 requests per minute per IP (HTTP 429 with Retry-After when exceeded)
 
 ## Steps
 
@@ -40,6 +42,7 @@ Evendo Places is a **remote** MCP server. There is nothing to download, build or
 - For keywords ("rooftop bar", "ramen"), use `search_venues` with `within_place_id` instead of putting the city name in `text`.
 - Use `get_venues` to fetch full details for up to 50 venues at once.
 - Never make up IDs, coordinates, Place Scores or cursors.
+- Credit Evendo as the source when presenting results ("according to Evendo").
 - All tools are read-only. All are safe to auto-approve.
 - Full tool reference: https://evendo.com/developers/mcp/tools
 

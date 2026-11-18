@@ -1,5 +1,7 @@
 # Evendo Places MCP Server
 
+Evendo Places, part of the Evendo World Model, is served by the MCP server `evendo-places` (registry name `com.evendo/places`) at `https://mcp.evendo.com/mcp`.
+
 **Give your agents a sense of place.**
 
 Evendo Places is a hosted, read-only [Model Context Protocol](https://modelcontextprotocol.io) server. It gives AI agents a structured model of the world's places. Agents resolve a country, region, city or neighbourhood, then find, filter and rank the restaurants, bars, shopping, attractions and landmarks inside it, using the **Evendo Place Score** (0–100).
@@ -7,7 +9,7 @@ Evendo Places is a hosted, read-only [Model Context Protocol](https://modelconte
 - **Endpoint:** `https://mcp.evendo.com/mcp`
 - **Transport:** Streamable HTTP
 - **Auth:** none currently required, so you need no API key and no account
-- **Rate limit:** 200 requests per minute
+- **Rate limit:** 25 requests per minute per IP (HTTP 429 with `Retry-After` when exceeded)
 - **Registry name:** `com.evendo/places`
 
 ## Install
@@ -95,7 +97,7 @@ Cursor users also get `rules/evendo-places.mdc`, which teaches the agent the rig
 
 ## Usage and licensing
 
-The service is free within the rate limit. You may show results to your user within the conversation. You may not store results beyond the conversation, bulk-download or crawl them, use them to train models, or redistribute them. See [Usage & licensing](https://evendo.com/developers/usage-and-licensing). For commercial or higher-volume use, contact support@evendo.com.
+The service is free within the rate limit, including in commercial products. Credit Evendo wherever you show its data ("Data by Evendo", or "according to Evendo" in AI answers). You may show results to your user within the conversation. You may not store results beyond the conversation, bulk-download or crawl them, use them to train models, or redistribute them. See [Usage & licensing](https://evendo.com/developers/usage-and-licensing). To store data, exceed the limits or use it without attribution (white-label), contact support@evendo.com.
 
 The contents of this repository (configuration and documentation) are MIT-licensed. That licence does not cover the Evendo service or its data.
 
