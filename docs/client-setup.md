@@ -9,12 +9,12 @@ Evendo Places is a hosted MCP server. You need no API key, no account and no ins
 | Endpoint | `https://mcp.evendo.com/mcp` |
 | Transport | Streamable HTTP |
 | Auth | None currently required |
-| Rate limit | 200 requests/minute |
+| Rate limit | 25 requests/minute per IP |
 | Registry name | `com.evendo/places` |
 
 ## Claude (claude.ai, Desktop)
 
-Open **Settings → Connectors → Add custom connector**, name it `Evendo Places` and enter the URL `https://mcp.evendo.com/mcp`.
+Open **Settings → Connectors** (in newer versions **Customize → Connectors**), click **Add custom connector**, name it `Evendo Places` and enter the URL `https://mcp.evendo.com/mcp`. No sign-in or OAuth settings are needed. On Team and Enterprise plans, an Owner adds it under **Organization settings → Connectors** first. Free plans allow one custom connector.
 
 ## Claude Code
 
