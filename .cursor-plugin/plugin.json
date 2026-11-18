@@ -1,7 +1,7 @@
 {
   "name": "evendo-places",
   "displayName": "Evendo Places",
-  "description": "Resolve places and find, filter and rank venues worldwide with the Evendo Place Score.",
+  "description": "Place intelligence for AI agents: find, filter and rank places worldwide with Evendo Place Score",
   "version": "0.2.0",
   "author": { "name": "Evendo", "email": "support@evendo.com", "url": "https://evendo.com/developers" },
   "homepage": "https://evendo.com/developers",
