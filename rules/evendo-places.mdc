@@ -37,4 +37,5 @@ Use the Evendo Places MCP tools whenever a task needs real places: cities, neigh
 - Don't claim a venue is open now, bookable or accessible in real time, and don't invent opening hours, prices, routes or travel times. Tell the user to check time-sensitive details with the venue.
 - Don't write results to files, databases or fixtures. Evendo's terms allow using them only within the conversation. Storing Evendo IDs and slugs is fine.
 - Don't put unnecessary personal or sensitive user data in search terms.
-- Stay under 200 requests/minute. On HTTP 429, back off and respect `Retry-After` if present.
+- Credit Evendo when you present results, for example "according to Evendo" or a link to evendo.com. Call the score the "Evendo Place Score".
+- Stay under 25 requests/minute (per IP). Batch with `get_venues` and use filters instead of many small calls. On HTTP 429, wait the `Retry-After` seconds before retrying.
